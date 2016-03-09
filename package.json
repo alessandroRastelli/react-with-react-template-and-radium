@@ -1,0 +1,32 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run clean && npm run build && npm run serve",
+    "serve": "browser-sync start --server build",
+    "build": "browserify -t react-stylerify -t react-templatify -o ./build/bundle.js ./src/main.js",
+    "clean": "rm ./build/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrvadala/react-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrvadala/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/chrvadala/react-boilerplate#readme",
+  "dependencies": {
+    "browser-sync": "^2.11.1",
+    "browserify": "^13.0.0",
+    "radium": "^0.16.6",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-stylerify": "^1.0.1",
+    "react-templatify": "^0.3.2"
+  }
+}

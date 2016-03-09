@@ -1,0 +1,14 @@
+<div>
+    <div style="{[this.style.label]}">
+        <span>Counter value:</span>
+        <span rt-if="this.state.count % 2 == 0" style="{[this.style.number, this.style.odd]}">
+            {this.state.count}
+        </span>
+        <span rt-if="this.state.count % 2 == 1" style="{[this.style.number, this.style.even]}">
+            {this.state.count}
+    </span>
+    </div>
+    <div>
+        <a onClick="{this.increment}" href="javascript:;" style="{[this.style.button]}">Incrementa</a>
+    </div>
+</div>
