@@ -1,7 +1,7 @@
 var React = require("react");
 var Radium = require("radium");
 var template = require("./counter.rt");
-var style = require("./counter.scss");
+var style = require("./counter.radium");
 
 module.exports = Radium(React.createClass({
     displayName: "Counter",
