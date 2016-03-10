@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run clean && npm run build && npm run serve",
+    "start": "npm run build && npm run serve",
     "serve": "browser-sync start --server build",
     "build": "browserify -t react-stylerify -t react-templatify -o ./build/bundle.js ./src/main.js",
     "clean": "rm ./build/bundle.js",
