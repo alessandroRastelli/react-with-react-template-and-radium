@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build && npm run serve",
-    "serve": "browser-sync start --server build",
-    "build": "browserify -t react-stylerify -t react-templatify -o ./build/bundle.js ./src/main.js",
-    "clean": "rm ./build/bundle.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run watch & npm run serve",
+    "serve": "browser-sync start --server build --files build",
+    "watch": "watchify -v -t react-stylerify -t react-templatify -o build/bundle.js src/main.js",
+    "build": "browserify -t react-stylerify -t react-templatify -o build/bundle.js src/main.js",
+    "clean": "rm ./build/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-stylerify": "^1.0.1",
-    "react-templatify": "^0.3.2"
+    "react-templatify": "^0.3.2",
+    "watchify": "^3.7.0"
   }
 }
