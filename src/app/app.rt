@@ -1,6 +1,8 @@
 <rt-require dependency="../wrapper/wrapper.js" as="Wrapper"/>
 <rt-require dependency="../counter/counter.js" as="Counter"/>
+<rt-require dependency="../calculator/calculator.js" as="Calculator"/>
 
 <Wrapper>
+    <Calculator></Calculator>
     <Counter start="10" step="3"></Counter>
 </Wrapper>

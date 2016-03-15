@@ -1,0 +1,14 @@
+<div>
+    <div>
+        <label>Value A</label>
+        <input type="text" defaultValue="{this.state.a}" onChange="{this.refresh.bind(this,'a')}"/>
+    </div>
+    <div>
+        <label>Valore B</label>
+        <input type="text" defaultValue="{this.state.b}" onChange="{this.refresh.bind(this,'b')}"/>
+    </div>
+    <div>
+        <label>Result</label>
+        <input type="text" value="{this.state.result}"/>
+    </div>
+</div>
