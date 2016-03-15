@@ -26,7 +26,7 @@
     "radium": "^0.16.6",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
-    "react-stylerify": "^1.0.1",
+    "react-stylerify": "^1.1.0",
     "react-templatify": "^0.3.2",
     "watchify": "^3.7.0"
   }

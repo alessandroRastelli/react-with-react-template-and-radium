@@ -6,7 +6,7 @@ var style = require("./counter.radium");
 module.exports = Radium(React.createClass({
     displayName: "Counter",
     render: template,
-    style: style,
+    style: style(),
 
     propTypes: {
         start: React.PropTypes.string.isRequired,

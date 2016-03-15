@@ -6,5 +6,7 @@ var style = require("./wrapper.radium");
 module.exports = Radium(React.createClass({
     displayName: "Wrapper",
     render: template,
-    style: style
+    style: style({
+        myPadding: 25
+    })
 }));
